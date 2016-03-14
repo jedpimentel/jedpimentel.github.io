@@ -1,0 +1,118 @@
+
+#body {
+	text-align: center;
+}
+
+#portfolio-sample {
+	display: inline-block;
+	text-align: middle;
+	
+	border: 1px solid black;
+	text-align: center;
+}
+
+/* THESE ARE THE PORTFOLIO ITEMS */
+#portfolio-sample>a {
+	display: inline-block;
+	
+	border: 1px solid black;
+	border-radius: 10%;
+	overflow: hidden;
+	
+	color:inherit;
+	text-decoration: none;
+	
+	max-width: 100%;
+	min-width: 20em;
+	_height: 50em;
+	
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	
+	background-color: green;
+	
+	position: relative;
+	text-align: center;
+	
+	_padding:0;
+}
+#portfolio-sample>a>*{
+	display: block; 
+	
+	background-color: rgba(255,255,255,0.90);
+	_position: absolute;
+	width: 100%;
+	min-height: 10%;
+	margin: 0;
+	
+}
+/* portfolio item title */
+#portfolio-sample>a>h3{
+	min-height: 1em;
+	
+	width: 100%;
+	
+	_font-size: 200%;
+	padding: 0.5em;
+}
+/* portfolio item imgae */
+#portfolio-sample>a>img {
+	display: inline-block;
+	height: 30em;
+	width: auto;
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+/* portfolio item description */
+#portfolio-sample>a>p{
+	_bottom: 0;
+	
+	padding: 0.5em;
+	
+	height: 5em;
+}
+#portfolio-sample>a>.projects-opaque-filter{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.25);
+}
+
+#portfolio-sample>a:hover>*{
+	background-color: rgba(192,192,192,1);
+}
+#portfolio-sample>a:hover>.projects-opaque-filter{
+	background-color: rgba(255,255,255,0);
+}
+
+/*
+#project-calculator{
+	background-image: url("images/calculator.png");
+}
+#project-news{
+	background-image: url("images/news.jpg");
+}
+#project-pomodoro{
+	background-image: url("images/pomodoro.png");
+}
+#project-quote-generator{
+	background-image: url("images/quote-generator.jpg");
+}
+#project-simon{
+	background-image: url("images/simon.jpg");
+}
+#project-tictactoe{
+	background-image: url("images/tictactoe.png");
+}
+#project-twitch{
+	background-image: url("images/twitch.jpg");
+}
+#project-wikipedia{
+	background-image: url("images/wikipedia.png");
+}
+#project-weather{
+	background-image: url("");
+}
+*/
