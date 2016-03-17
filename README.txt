@@ -5,7 +5,7 @@ I'm currently learning Web Development via freecodecamp.com. Making this portfol
 As-is, this portfolio is mainly done to meet the following problem statement:
 http://www.freecodecamp.com/challenges/build-a-personal-portfolio-webpage
 
-I plan to modify this portfolio in the future. 
+I plan to modify this portfolio in the future.
 
 To-do:
 	make a personal favicon.ico

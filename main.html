@@ -5,6 +5,9 @@
 	<title>jedpimentel</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script language="javascript" type="text/javascript" src="script.js"></script>
+	
+	<!-- http://www.webdesignerdepot.com/2012/02/common-mobile-web-design-mistakes/ -->
+	<meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
@@ -30,77 +33,92 @@
 		<h2>Jose E. Pimentel</h2>
 		<p>I've been learning web development through online resources, after obtaining an Industrial Engineering degree in the Dominican Republic.</p>
 		<p>I'm hoping to move back to the United States this year and be part of a team that does stuff with code.</p>
-		<p>At the moment, my projects have been done via HTML/CSS and JavaScript.</p>
+		<p>I've been using HTML/CSS and JavaScript. I can wrap my head around jQuery and Bootstrap.</p>
 	</div><!-- #about end -->
 	
 	
 	
 	<div id="portfolio">
 	
-		<h2>Stuff I've assembled</h2>
+		<h2>Stuff I've put together</h2>
 		<div id="portfolio-sample">
 		
-			<a id="project-calculator" href="http://codepen.io/JedPimentel/full/MKpzxK/">
-				<div class="projects-opaque-filter"></div><!-- layers an opaque color in top of rest of this block -->
-				<h3>Calculator</h3>
-				<img src="images/calculator.png">
-				<p>Description of what was done.</p>
+			<div class="portfolio-item">
+			
+			</div>
+		
+		
+			<a id="project-calculator" class="project-linkbox" href="http://codepen.io/JedPimentel/full/MKpzxK/">
+				<div class="portfolio-item">
+					<h3>Calculator</h3>
+					<img class="project-image" src="images/calculator.png" />
+					<p class="project-description">Literally a calculator.</p>
+				</div><!-- .portfolio-item end-->
+			</a><!-- .project-linkbox end -->
+			
+			<a id="project-news" class="project-linkbox" href="http://codepen.io/JedPimentel/full/xZPqXG">
+				<div class="portfolio-item">
+					<h3>News Tiles</h3>
+					<img class="project-image" src="images/news.jpg" />
+					<p class="project-description">Pulls and links to recent articles from the freeCodeCamp "Camper News API". API currently offline, need to update to another news API.</p>
+				</div><!-- .portfolio-item end-->
+			</a><!-- .project-linkbox end -->
+			
+			<a id="project-pomodoro" class="project-linkbox" href="http://codepen.io/JedPimentel/full/VeYjLW">
+				<div class="portfolio-item">
+					<h3>Pomodoro Timer</h3>
+					<img class="project-image" src="images/pomodoro.png" />
+					<p class="project-description">An interval timer. Set the short and long intervals and the app will alternate between the "short" and "long" countdowns.</p>
+				</div><!-- .portfolio-item end-->
 			</a><!-- end -->
 			
-			<a id="project-news" href="http://codepen.io/JedPimentel/full/xZPqXG">
-				<div class="projects-opaque-filter"></div>
-				<h3>News Tiles</h3>
-				<img src="images/news.jpg">
-				<p>Description of what was done.</p>
+			<a id="project-quote-generator" class="project-linkbox" href="http://codepen.io/JedPimentel/full/zvGOdd">
+				<div class="portfolio-item">
+					<h3>Star Trek Quote Generator</h3>
+					<img class="project-image" src="images/quote-generator.jpg" />
+					<p class="project-description">Over fifty Star Trek: The Original Series Quotes, on your very own Federation-issue PADD.</p>
+				</div><!-- .portfolio-item end-->
 			</a><!-- end -->
 			
-			<a id="project-pomodoro" href="http://codepen.io/JedPimentel/full/VeYjLW">
-				<div class="projects-opaque-filter"></div>
-				<h3>Pomodoro Timer</h3>
-				<img src="images/pomodoro.png">
-				<p>Description of what was done.</p>
+			<a id="project-simon" class="project-linkbox" href="http://codepen.io/JedPimentel/full/eZJBLw">
+				<div class="portfolio-item">
+					<h3>Twenty Roars (Simon)</h3>
+					<img class="project-image" src="images/simon.jpg" />
+					<p class="project-description">A T-Rex themed Simon clone. Includes a "zen" and a simpple record/playback button.</p>
+				</div><!-- .portfolio-item end-->
 			</a><!-- end -->
 			
-			<a id="project-quote-generator" href="http://codepen.io/JedPimentel/full/zvGOdd">
-				<div class="projects-opaque-filter"></div>
-				<h3>Star Trek Quote Generator</h3>
-				<img src="images/quote-generator.jpg">
-				<p>Description of what was done.</p>
+			<a id="project-tictactoe" class="project-linkbox" href="http://codepen.io/JedPimentel/full/KVYYrm">
+				<div class="portfolio-item">
+					<h3>Tic-Tac-Toe</h3>
+					<img class="project-image" src="images/tictactoe.png" />
+					<p class="project-description">An un-beatable game of tic-tac-toe.</p>
+				</div><!-- .portfolio-item end-->
 			</a><!-- end -->
 			
-			<a id="project-simon" href="http://codepen.io/JedPimentel/full/eZJBLw">
-				<div class="projects-opaque-filter"></div>
-				<h3>Twenty Roars (Simon)</h3>
-				<img src="images/simon.jpg">
-				<p>Description of what was done.</p>
+			<a id="project-twitch" class="project-linkbox" href="http://codepen.io/JedPimentel/full/obdVgY">
+				<div class="portfolio-item">
+					<h3>Twitch.tv custom streamer list</h3>
+					<img class="project-image" src="images/twitch.jpg" />
+					<p class="project-description">Presents a list of Twitch pre-selected Twitch streamers, sorts by status, and describes the current streaming session.</p>
+				</div><!-- .portfolio-item end-->
 			</a><!-- end -->
 			
-			<a id="project-tictactoe" href="http://codepen.io/JedPimentel/full/KVYYrm">
-				<div class="projects-opaque-filter"></div>
-				<h3>Tic-Tac-Toe</h3>
-				<img src="images/tictactoe.png">
-				<p>Description of what was done.</p>
+			<a id="project-wikipedia" class="project-linkbox" href="http://codepen.io/JedPimentel/full/VeQJQG">
+				<div class="portfolio-item">
+					<h3>Wikipedia Article Search</h3>
+					<img class="project-image" src="images/wikipedia.png" />
+					<p class="project-description">Search function pulls ten Wikipedia article via the MediaWiki API.</p>
+				</div><!-- .portfolio-item end-->
 			</a><!-- end -->
 			
-			<a id="project-twitch" href="http://codepen.io/JedPimentel/full/obdVgY">
-				<div class="projects-opaque-filter"></div>
-				<h3>Twitch.tv custom streamer list</h3>
-				<img src="images/twitch.jpg">
-				<p>Description of what was done.</p>
-			</a><!-- end -->
-			
-			<a id="project-wikipedia" href="http://codepen.io/JedPimentel/full/VeQJQG">
-				<div class="projects-opaque-filter"></div>
-				<h3>Wikipedia Article Search</h3>
-				<img src="images/wikipedia.png">
-				<p>Description of what was done.</p>
-			</a><!-- end -->
-			
-			<a id="project-weather" href="http://codepen.io/JedPimentel/full/RrgZOd">
-				<div class="projects-opaque-filter"></div>
-				<h3>Local Weather</h3>
-				<img src="">
-				<p>Description of what was done.</p>
+			<!--href="http://codepen.io/JedPimentel/full/RrgZOd"-->
+			<a id="project-weather" class="project-linkbox" href="http://codepen.io/JedPimentel/pen/RrgZOd">
+				<div class="portfolio-item">
+					<h3>Local Weather</h3>
+					<img class="project-image" src="images/weather.png" />
+					<p class="project-description">Current local weather. Grabs user location data and pulls data from the openweathermap.org </p>
+				</div><!-- .portfolio-item end-->
 			</a><!-- end -->
 			
 		</div><!-- #portfolio-sample end -->
