@@ -1,0 +1,197 @@
+
+
+
+#body {
+	text-align: center;
+}
+
+#portfolio-sample {
+	display: inline-block;
+	text-align: middle;
+	
+	border: 1px solid black;
+	text-align: center;
+	width: 100%;
+}
+
+
+
+/* THESE ARE THE PORTFOLIO ITEMS */
+.project-linkbox {
+	display: inline-table;
+	width: 1%;
+	
+	border: 1px solid black;
+	border-radius: 5%;
+	overflow: hidden;
+	
+	color:inherit;
+	text-decoration: none;
+	
+	max-width: 100%;
+	_min-width: 20em;
+	_height: 50em;
+	
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	
+	background-color: green;
+	
+	position: relative;
+	text-align: center;
+	
+	_padding:0;
+	border: 1px dotted red;
+}
+.portfolio-item {
+	width: 1%;
+	_border: 10px dotted blue;
+	
+	display: inline-table;
+}
+.portfolio-item>*{
+	_display: block; 
+	
+	background-color: rgba(255,255,255,0.90);
+	_position: absolute;
+	_width: 100%;
+	_min-height: 10%;
+	margin: 0;
+	
+}
+/* portfolio item  T I T L E  */
+.portfolio-item>h3{
+	min-height: 1em;
+	
+	_width: 100%;
+	
+	_font-size: 200%;
+	padding: 0.5em;
+}
+/* portfolio item  I M A G E  */
+.project-image {
+	display: block;
+	
+	
+	height: 20em; 
+	_width: auto;
+	_max-width: 100%;
+	padding: 0;
+	margin: 0;
+	
+	border: 1px dotted red;
+}
+/* portfolio item  D E S C R I P T I O N  */
+.project-description{
+	_bottom: 0;
+	
+	
+	
+	padding: 0.5em;
+	
+	min-height: 5em;
+}
+
+.portfolio-item:hover>*{
+	background-color: rgba(192,192,192,1);
+}
+
+/* on small screens, for portfolio samples, take away static ____ height and give a static 100% width */
+/* width is approx calc( 20em * ( 525 / 720 ) + 2px ) */
+@media (max-width: 30em) {
+	.project-linkbox {
+		width: 100%;
+	}
+	.portfolio-item {
+		width: 100%;
+	}
+	.project-image {
+		height: auto;
+		width: 100%;
+	}
+}
+
+/*
+#project-calculator{
+	background-image: url("images/calculator.png");
+}
+#project-news{
+	background-image: url("images/news.jpg");
+}
+#project-pomodoro{
+	background-image: url("images/pomodoro.png");
+}
+#project-quote-generator{
+	background-image: url("images/quote-generator.jpg");
+}
+#project-simon{
+	background-image: url("images/simon.jpg");
+}
+#project-tictactoe{
+	background-image: url("images/tictactoe.png");
+}
+#project-twitch{
+	background-image: url("images/twitch.jpg");
+}
+#project-wikipedia{
+	background-image: url("images/wikipedia.png");
+}
+#project-weather{
+	background-image: url("");
+}
+*/
+
+
+/*
+.force-wrap {
+	
+	height: 100%;
+	max-width: 100%;
+	
+	border: 1px solid red;
+}
+*/
+
+
+
+.link-box {
+}
+.link-box a {
+	color: inherit;
+	text-decoration: inherit;
+	
+	display: inline-block;
+	border: 1px dotted black;
+	height: 2em;
+	
+	vertical-align: middle;
+}
+.link-box .site-icon {
+	display: inline-block;
+	height: 100%; /*or 1em*/
+	vertical-align: text-top;
+}
+.link-box a div {
+	padding-left: 0.5em;
+	padding-right: 1em;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
