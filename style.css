@@ -156,3 +156,42 @@
 
 
 
+.link-box {
+}
+.link-box a {
+	color: inherit;
+	text-decoration: inherit;
+	
+	display: inline-block;
+	border: 1px dotted black;
+	height: 2em;
+	
+	vertical-align: middle;
+}
+.link-box .site-icon {
+	display: inline-block;
+	height: 100%; /*or 1em*/
+	vertical-align: text-top;
+}
+.link-box a div {
+	padding-left: 0.5em;
+	padding-right: 1em;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
