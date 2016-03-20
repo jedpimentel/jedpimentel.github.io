@@ -1,28 +1,142 @@
 
 
 
-#body {
+body {
 	text-align: center;
+}
+
+
+body {
+	_padding-top: 3em;
+	_margin-top: 2em;
+	_border: 1px solid black;
+}
+
+.portfolio-segement {
+	_padding-top: 3em;
+	_padding-bottom: 3em;
+	margin: 3em 0;
+	min-height: 50vh;
+	border: 1px solid #DDD;
+	
+}
+
+#navbar {
+	display: block;
+	position: fixed;
+	-webkit-transform: translateZ(0); 
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2.5em;
+	line-height: 2.5em;
+	text-align: left;
+	_padding: 0 1em;
+	_border: 1px dotted orange;
+	border-bottom: 1px solid black;
+	background-color: #EEE;
+}
+#navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#navbar li {
+	display: inline-block;
+}
+#navbar ul a {
+	display: inline-block;
+	color: inherit;
+	text-decoration: inherit;
+	_margin: 0;
+	border-color: red;
+	border-style: solid;
+	border-width: 0 0 0 1px;
+	padding: 0 1em;
+	line-height: inherit;
+	height: inherit;
+	background-color: #DDD;
+}
+#navbar > #top-name {
+	position: fixed;
+	_border: 1px dotted black;
+	padding-left: 1em;
+	display: inline-block;
+}
+#navbar > #top-links {
+	_border: 1px dotted black;
+	display: inline-block;
+	float: right;
+}
+@media (max-width: 25em) {
+	#navbar {
+		height: 1.8em;
+		line-height: 1.8em;
+		width: 100%;
+	}
+	#navbar > #top-name {
+		display: none;
+	}
+	#navbar > #top-links {
+		float: none;
+		text-align: center; <!-- redundant -->
+		width: 100%;
+	}
+	#navbar ul {
+		width: 100%;
+	}
+	#navbar ul li {
+		width: calc( 33.3333% );
+	}
+	#navbar ul a {
+		padding: 0;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+
+#about {
+	_padding-bottom: 1em;
+	_padding-top: 0;
+}
+#about .text-bunch {
+	display: inline-block;
+	_border: 1px solid blue;
+	max-width: 40em;
+}
+#about h1 {
+	font-size: calc( ( 100vw - 2em ) / 11 );
+}
+#about .text-bunch > p {
+	text-align: justify;
+}
+
+#about p {
+	_display: inline-block;
+	_text-align: left;
+	_margin: 1em;
+	_border: 1px solid orange;
+	_max-width: 30em;
 }
 
 #portfolio-sample {
 	display: inline-block;
 	
-	border: 1px solid black;
-	text-align: justify;
+	_border: 1px solid black;
+	text-align: center;
 	_text-justify: distribute;
 	width: 100%;
 }
-
-
-
 /* THESE ARE THE PORTFOLIO ITEMS */
 .project-linkbox {
 	display: inline-table;
 	width: 1%;
 	
 	border: 1px solid black;
-	border-radius: 5%;
+	_border-radius: 5%;
 	overflow: hidden;
 	
 	color:inherit;
@@ -31,20 +145,22 @@
 	max-width: 100%;
 	_min-width: 20em;
 	_height: 50em;
+	margin: 0.2em;
 	
 	
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
 	
-	background-color: green;
+	background-color: #DDD;
 	
 	position: relative;
 	text-align: center;
 	
 	_padding:0;
-	border: 1px dotted red;
+	_border: 1px dotted red;
 }
+
 .portfolio-item {
 	width: 1%;
 	_border: 10px dotted blue;
@@ -54,7 +170,7 @@
 .portfolio-item>*{
 	_display: block; 
 	
-	background-color: rgba(255,255,255,0.90);
+	_background-color: rgba(255,255,255,0.90);
 	_position: absolute;
 	_width: 100%;
 	_min-height: 10%;
@@ -81,21 +197,21 @@
 	padding: 0;
 	margin: 0;
 	
-	border: 1px dotted red;
+	_border: 1px dotted red;
 }
 /* portfolio item  D E S C R I P T I O N  */
 .project-description{
 	_bottom: 0;
 	
-	
+	text-align: justify;
 	
 	padding: 0.5em;
 	
 	min-height: 5em;
 }
 
-.portfolio-item:hover>*{
-	background-color: rgba(192,192,192,1);
+.portfolio-item:hover{
+	background-color: #EEE;
 }
 
 /* on small screens, for portfolio samples, take away static ____ height and give a static 100% width */
@@ -103,6 +219,10 @@
 @media (max-width: 30em) {
 	.project-linkbox {
 		width: 100%;
+		margin-left: 0;
+		margin:right: 0;
+		border-left: 0;
+		border-right: 0;
 	}
 	.portfolio-item {
 		width: 100%;
@@ -112,99 +232,6 @@
 		width: 100%;
 	}
 }
-
-/*
-#project-calculator{
-	background-image: url("images/calculator.png");
-}
-#project-news{
-	background-image: url("images/news.jpg");
-}
-#project-pomodoro{
-	background-image: url("images/pomodoro.png");
-}
-#project-quote-generator{
-	background-image: url("images/quote-generator.jpg");
-}
-#project-simon{
-	background-image: url("images/simon.jpg");
-}
-#project-tictactoe{
-	background-image: url("images/tictactoe.png");
-}
-#project-twitch{
-	background-image: url("images/twitch.jpg");
-}
-#project-wikipedia{
-	background-image: url("images/wikipedia.png");
-}
-#project-weather{
-	background-image: url("");
-}
-*/
-
-
-/*
-.force-wrap {
-	
-	height: 100%;
-	max-width: 100%;
-	
-	border: 1px solid red;
-}
-*/
-
-body {
-	padding-top: 2em;
-	_margin-top: 2em;
-	border: 1px solid black;
-}
-#navbar {
-	display: block;
-	position: fixed;
-	-webkit-transform: translateZ(0); 
-	z-index: 10;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 2.5em;
-	line-height: 2.5em;
-	_padding: 0 1em;
-	_border: 1px dotted orange;
-	background-color: green;
-}
-#navbar ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-#navbar li {
-	display: inline-block;
-}
-#navbar ul a {
-	display: inline-block;
-	color: inherit;
-	text-decoration: inherit;
-	_margin: 0;
-	border-color: red;
-	border-style: solid;
-	border-width: 0 0 0 1px;
-	padding: 0 1em;
-	line-height: inherit;
-	height: inherit;
-	background-color: gray;
-}
-#navbar > #top-name {
-	position: fixed;
-	_border: 1px dotted black;
-	display: inline-block;
-}
-#navbar > #top-links {
-	_border: 1px dotted black;
-	display: inline-block;
-	float: right;
-}
-
 
 
 
@@ -217,6 +244,7 @@ body {
 	
 	border: 1px solid black;
 	display: inline-block;
+	margin: 0.075em;
 	
 	height: 2em;
 	line-height: 2em;
@@ -239,15 +267,16 @@ body {
 .format-aid-0-width{
 	display: inline-block;
 	_height: 10em;
-	width: 0;
+	width: 1em;
 	padding: 0;
 	margin: 0;
-	padding-right: 10px;
+	_padding-right: 100px;
 	_border: 10px dotted green;
+	background-color: red;
 }
 .format-aid-100-width{
 	display: inline-block;
-	_height: 10em;
+	height: 0;
 	width: 100%;
 	padding: 0;
 	margin: 0;
