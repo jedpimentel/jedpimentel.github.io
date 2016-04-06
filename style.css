@@ -3,21 +3,16 @@
 
 body {
 	text-align: center;
+	background-color: rgb(120, 180, 120);
 }
 
-
-body {
-	_padding-top: 3em;
-	_margin-top: 2em;
-	_border: 1px solid black;
-}
 
 .portfolio-segement {
-	_padding-top: 3em;
-	_padding-bottom: 3em;
 	margin: 3em 0;
 	min-height: 50vh;
 	border: 1px solid #DDD;
+	_background-color: rgba(1, 255, 255, 0.95);
+	background-color: white;
 	
 }
 
@@ -32,10 +27,9 @@ body {
 	height: 2.5em;
 	line-height: 2.5em;
 	text-align: left;
-	_padding: 0 1em;
-	_border: 1px dotted orange;
 	border-bottom: 1px solid black;
 	background-color: #EEE;
+	
 }
 #navbar ul {
 	list-style-type: none;
@@ -49,7 +43,6 @@ body {
 	display: inline-block;
 	color: inherit;
 	text-decoration: inherit;
-	_margin: 0;
 	border-color: red;
 	border-style: solid;
 	border-width: 0 0 0 1px;
@@ -60,12 +53,10 @@ body {
 }
 #navbar > #top-name {
 	position: fixed;
-	_border: 1px dotted black;
 	padding-left: 1em;
 	display: inline-block;
 }
 #navbar > #top-links {
-	_border: 1px dotted black;
 	display: inline-block;
 	float: right;
 }
@@ -80,8 +71,6 @@ body {
 	}
 	#navbar > #top-links {
 		float: none;
-		text-align: center; <!-- redundant -->
-		width: 100%;
 	}
 	#navbar ul {
 		width: 100%;
@@ -97,111 +86,87 @@ body {
 }
 
 
-
+/* ABOUT ME */
 #about {
-	_padding-bottom: 1em;
-	_padding-top: 0;
+	_background-color: rgb(255, 230, 204);
+	padding-bottom: 3em;
 }
 #about .text-bunch {
 	display: inline-block;
-	_border: 1px solid blue;
 	max-width: 40em;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
 }
 #about h1 {
 	font-size: calc( ( 100vw - 2em ) / 11 );
 }
 #about .text-bunch > p {
 	text-align: justify;
-}
 
-#about p {
-	_display: inline-block;
-	_text-align: left;
-	_margin: 1em;
-	_border: 1px solid orange;
-	_max-width: 30em;
 }
 
 #portfolio-sample {
 	display: inline-block;
-	
-	_border: 1px solid black;
 	text-align: center;
-	_text-justify: distribute;
 	width: 100%;
 }
+
+
 /* THESE ARE THE PORTFOLIO ITEMS */
+#portfolio {
+	background-color: white;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+#portfolio h2 {
+	background-color: white;
+}
 .project-linkbox {
 	display: inline-table;
 	width: 1%;
 	
 	border: 1px solid black;
-	_border-radius: 5%;
 	overflow: hidden;
 	
 	color:inherit;
 	text-decoration: none;
 	
 	max-width: 100%;
-	_min-width: 20em;
-	_height: 50em;
 	margin: 0.2em;
-	
-	
+		
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
 	
-	background-color: #DDD;
-	
 	position: relative;
 	text-align: center;
-	
-	_padding:0;
-	_border: 1px dotted red;
 }
 
 .portfolio-item {
 	width: 1%;
-	_border: 10px dotted blue;
-	
 	display: inline-table;
+	_background-color: white;
+	background-color: rgba(255, 255, 255, 0.75);
 }
 .portfolio-item>*{
-	_display: block; 
-	
-	_background-color: rgba(255,255,255,0.90);
-	_position: absolute;
-	_width: 100%;
-	_min-height: 10%;
 	margin: 0;
 	
 }
 /* portfolio item  T I T L E  */
 .portfolio-item>h3{
 	min-height: 1em;
-	
-	_width: 100%;
-	
-	_font-size: 200%;
 	padding: 0.5em;
 }
 /* portfolio item  I M A G E  */
 .project-image {
 	display: block;
 	
-	
 	height: 20em; 
-	_width: auto;
-	_max-width: 100%;
 	padding: 0;
 	margin: 0;
-	
-	_border: 1px dotted red;
 }
 /* portfolio item  D E S C R I P T I O N  */
 .project-description{
-	_bottom: 0;
 	
 	text-align: justify;
 	
@@ -211,7 +176,7 @@ body {
 }
 
 .portfolio-item:hover{
-	background-color: #EEE;
+	background-color: white;
 }
 
 /* on small screens, for portfolio samples, take away static ____ height and give a static 100% width */
@@ -233,8 +198,11 @@ body {
 	}
 }
 
-
-
+/* CONTACT INFORMATION */
+#contact {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
 
 .link-box {
 }
@@ -248,8 +216,6 @@ body {
 	
 	height: 2em;
 	line-height: 2em;
-	
-	
 }
 .link-box > a:hover {
 	background-color: #EEE;
@@ -266,12 +232,9 @@ body {
 
 .format-aid-0-width{
 	display: inline-block;
-	_height: 10em;
 	width: 1em;
 	padding: 0;
 	margin: 0;
-	_padding-right: 100px;
-	_border: 10px dotted green;
 	background-color: red;
 }
 .format-aid-100-width{
@@ -280,7 +243,6 @@ body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	_border: 10px dotted green;
 }
 
 
