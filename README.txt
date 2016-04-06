@@ -9,6 +9,7 @@ I plan to modify this portfolio in the future.
 
 To-do:
 	make a personal favicon.ico
+	change the portfolio item container for a flexbox (justify-content: "space-around" seems good).
 
 Jose Eduardo Pimentel
 /jedpimentel

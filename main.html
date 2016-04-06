@@ -12,116 +12,123 @@
 
 <body>
 	<!-- menu with links to different places, always floats at top of screen -->
+	
 	<nav id="navbar">
-		<a href="#home">Home</a>
-		<a href="#about">About</a>
-		<a href="#portfolio">Portfolio</a>
-		<a href="#contact">Contact</a>
+		<div id="top-name"><a>Jose E. Pimentel</a></div>
+		<ul id="top-links">
+			<!--<li><a href="#home">Home</a></li><wbr>
+			--><li><a href="#about">About</a></li><wbr><!--
+			--><li><a href="#portfolio">Portfolio</a></li><!--
+			--><li><a href="#contact">Contact</a></li><!--
+		--></ul>
 	</nav><!-- #navbar end -->
+	
 	<!-- My name and a a tiny bit of words, media links -->
-	<div id="home">
-		<h1>Jose Eduardo Pimentel</h1>
-		<p>Some quick text to take up space</p>
+	<div id="about" class="portfolio-segement">
+	
+		<h1>José Eduardo Pimentel</h1>
 		<div class="link-box">
 			<a href="https://github.com/jedpimentel">
-				<img class="site-icon" src="icons/github.svg"/><div>Github</div>
-			</a>
-			<a href="https://www.linkedin.com/in/jose-pimentel-ab087b78?trk=nav_responsive_tab_profile">
+				<img class="site-icon" src="icons/github.svg"/><span>Github</span>
+			</a><!--
+			--><a href="https://www.linkedin.com/in/jose-pimentel-ab087b78?trk=nav_responsive_tab_profile">
 				<img class="site-icon" src="icons/linkedin-square.svg"/><span>Linkedin</span>
-			</a>
-			<a href="http://www.freecodecamp.com/jedpimentel">
+			</a><!--
+			--><a href="http://www.freecodecamp.com/jedpimentel">
 				<img class="site-icon" src="icons/fire.svg"/><span>freeCodeCamp</span>
-			</a>
-			<a href="http://www.codewars.com/users/jedpimentel">
+			</a><!--
+			--><a href="http://www.codewars.com/users/jedpimentel">
 				<img class="site-icon" src="icons/codewars.png"/><span>Codewars</span>
 			</a>
 		</div><!-- .link-box end-->
-	</div><!-- #home end -->
-	<div id="about">
-		<h2>Jose E. Pimentel</h2>
-		<p>I've been learning web development through online resources, after obtaining an Industrial Engineering degree in the Dominican Republic.</p>
-		<p>I'm hoping to move back to the United States this year and be part of a team that does stuff with code.</p>
-		<p>I've been using HTML/CSS and JavaScript. I can wrap my head around jQuery and Bootstrap.</p>
+	
+		<div class="text-bunch">
+			<h2>Jose E. Pimentel</h2>
+			<p>I've been learning web development through online resources, after obtaining an Industrial Engineering degree in the Dominican Republic.</p>
+			<p>I have dual American/Dominican nationality, and am hoping to move back to the states some day. In the mean time I'm trying to become as competent a dev as I can.</p>
+			<p>I've been using HTML/CSS and JavaScript. I can wrap my head around jQuery and Bootstrap.</p>
+		</div>
+		
 	</div><!-- #about end -->
 	
 	
 	
-	<div id="portfolio">
+	<div id="portfolio" class="portfolio-segement">
 	
 		<h2>Stuff I've put together</h2>
-		<div id="portfolio-sample">
+		<div id="portfolio-sample"><!--
 		
 			<div class="portfolio-item">
 			
 			</div>
 		
-		
-			<a id="project-calculator" class="project-linkbox" href="http://codepen.io/JedPimentel/full/MKpzxK/">
+			-->
+			
+			 <a id="project-calculator" class="project-linkbox" href="http://codepen.io/JedPimentel/full/MKpzxK/">
 				<div class="portfolio-item">
 					<h3>Calculator</h3>
 					<img class="project-image" src="images/calculator.png" />
 					<p class="project-description">Literally a calculator.</p>
 				</div><!-- .portfolio-item end-->
-			</a><!-- .project-linkbox end -->
+			</a><!-- .project-linkbox end --><!--
 			
-			<a id="project-news" class="project-linkbox" href="http://codepen.io/JedPimentel/full/xZPqXG">
+			--><a id="project-news" class="project-linkbox" href="http://codepen.io/JedPimentel/full/xZPqXG">
 				<div class="portfolio-item">
 					<h3>News Tiles</h3>
 					<img class="project-image" src="images/news.jpg" />
 					<p class="project-description">Pulls and links to recent articles from the freeCodeCamp "Camper News API". API currently offline, need to update to another news API.</p>
 				</div><!-- .portfolio-item end-->
-			</a><!-- .project-linkbox end -->
+			</a><!-- .project-linkbox end --><!--
 			
-			<a id="project-pomodoro" class="project-linkbox" href="http://codepen.io/JedPimentel/full/VeYjLW">
+			--><a id="project-pomodoro" class="project-linkbox" href="http://codepen.io/JedPimentel/full/VeYjLW">
 				<div class="portfolio-item">
 					<h3>Pomodoro Timer</h3>
 					<img class="project-image" src="images/pomodoro.png" />
 					<p class="project-description">An interval timer. Set the short and long intervals and the app will alternate between the "short" and "long" countdowns, with an alarm in between.</p>
 				</div><!-- .portfolio-item end-->
-			</a><!-- end -->
+			</a><!-- end --><!--
 			
-			<a id="project-quote-generator" class="project-linkbox" href="http://codepen.io/JedPimentel/full/zvGOdd">
+			--><a id="project-quote-generator" class="project-linkbox" href="http://codepen.io/JedPimentel/full/zvGOdd">
 				<div class="portfolio-item">
 					<h3>Star Trek Quote Generator</h3>
 					<img class="project-image" src="images/quote-generator.jpg" />
 					<p class="project-description">Over fifty Star Trek: The Original Series quotes. Explore quotes from the final frontier, on your very own Federation-issue PADD.</p>
 				</div><!-- .portfolio-item end-->
-			</a><!-- end -->
+			</a><!-- end --><!--
 			
-			<a id="project-simon" class="project-linkbox" href="http://codepen.io/JedPimentel/full/eZJBLw">
+			--><a id="project-simon" class="project-linkbox" href="http://codepen.io/JedPimentel/full/eZJBLw">
 				<div class="portfolio-item">
 					<h3>Twenty Roars (Simon)</h3>
 					<img class="project-image" src="images/simon.jpg" />
 					<p class="project-description">A T-Rex themed Simon clone. Includes a "zen" and a simpple record/playback button.</p>
 				</div><!-- .portfolio-item end-->
-			</a><!-- end -->
+			</a><!-- end --><!--
 			
-			<a id="project-tictactoe" class="project-linkbox" href="http://codepen.io/JedPimentel/full/KVYYrm">
+			--><a id="project-tictactoe" class="project-linkbox" href="http://codepen.io/JedPimentel/full/KVYYrm">
 				<div class="portfolio-item">
 					<h3>Tic-Tac-Toe</h3>
 					<img class="project-image" src="images/tictactoe.png" />
 					<p class="project-description">An un-beatable game of tic-tac-toe.</p>
 				</div><!-- .portfolio-item end-->
-			</a><!-- end -->
+			</a><!-- end --><!--
 			
-			<a id="project-twitch" class="project-linkbox" href="http://codepen.io/JedPimentel/full/obdVgY">
+			--><a id="project-twitch" class="project-linkbox" href="http://codepen.io/JedPimentel/full/obdVgY">
 				<div class="portfolio-item">
 					<h3>Twitch.tv custom streamer list</h3>
 					<img class="project-image" src="images/twitch.jpg" />
 					<p class="project-description">Presents a list of Twitch pre-selected Twitch streamers, sorts by status, and describes the current streaming session.</p>
 				</div><!-- .portfolio-item end-->
-			</a><!-- end -->
+			</a><!-- end --><!--
 			
-			<a id="project-wikipedia" class="project-linkbox" href="http://codepen.io/JedPimentel/full/VeQJQG">
+			--><a id="project-wikipedia" class="project-linkbox" href="http://codepen.io/JedPimentel/full/VeQJQG">
 				<div class="portfolio-item">
 					<h3>Wikipedia Article Search</h3>
 					<img class="project-image" src="images/wikipedia.png" />
 					<p class="project-description">Search function pulls ten Wikipedia article via the MediaWiki API.</p>
 				</div><!-- .portfolio-item end-->
-			</a><!-- end -->
+			</a><!-- end --><!--
 			
-			<!--href="http://codepen.io/JedPimentel/full/RrgZOd"-->
-			<a id="project-weather" class="project-linkbox" href="http://codepen.io/JedPimentel/pen/RrgZOd">
+			--><a id="project-weather" class="project-linkbox" href="http://codepen.io/JedPimentel/pen/RrgZOd">
 				<div class="portfolio-item">
 					<h3>Local Weather</h3>
 					<img class="project-image" src="images/weather.png" />
@@ -129,13 +136,30 @@
 				</div><!-- .portfolio-item end-->
 			</a><!-- end -->
 			
+			<div class="format-aid-100-width"></div>
 		</div><!-- #portfolio-sample end -->
 	</div><!-- #portfolio end -->
 	
 	
-	<div id="contact">
+	<div id="contact" class="portfolio-segement">
 		<h2>Email me:<br>jedpimentel@gmail.com</h2>
+		<div class="link-box">
+			<a href="https://github.com/jedpimentel">
+				<img class="site-icon" src="icons/github.svg"/><span>Github</span>
+			</a><!--
+			--><a href="https://www.linkedin.com/in/jose-pimentel-ab087b78?trk=nav_responsive_tab_profile">
+				<img class="site-icon" src="icons/linkedin-square.svg"/><span>Linkedin</span>
+			</a><!--
+			--><a href="http://www.freecodecamp.com/jedpimentel">
+				<img class="site-icon" src="icons/fire.svg"/><span>freeCodeCamp</span>
+			</a><!--
+			--><a href="http://www.codewars.com/users/jedpimentel">
+				<img class="site-icon" src="icons/codewars.png"/><span>Codewars</span>
+			</a>
+		</div><!-- .link-box end-->
 	</div><!-- #contact end -->
+	
+	
 	<div id="footer">
 		
 	</div><!-- #footer end -->
