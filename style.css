@@ -1,4 +1,9 @@
-/* TODO: give images a max width, debug the width issue when resizing */
+
+@font-face {
+	font-family: cella;
+	src: url(fonts/Cella.otf);
+}
+
 
 .disclaimer-text {
 	color:red;
@@ -7,13 +12,14 @@
 
 body {
 	text-align: center;
-	background-color: rgb(120, 180, 120);
+	_background-color: rgb(120, 180, 120);
+	background-color: black;
 }
 
 
 .portfolio-segement {
 	margin: 3em 0;
-	min-height: 50vh;
+	_min-height: 50vh;
 	border: 1px solid #DDD;
 	_background-color: rgba(1, 255, 255, 0.95);
 	background-color: white;
@@ -47,7 +53,7 @@ body {
 	display: inline-block;
 	color: inherit;
 	text-decoration: inherit;
-	border-color: red;
+	border-color: black;
 	border-style: solid;
 	border-width: 0 0 0 1px;
 	padding: 0 1em;
@@ -98,11 +104,29 @@ body {
 #about .text-bunch {
 	display: inline-block;
 	max-width: 40em;
+	margin-top: 0.5em;
+	padding-top: 0.5em;
 	padding-left: 0.25em;
 	padding-right: 0.25em;
+	border: 1px solid black;
+	
 }
-#about h1 {
-	font-size: calc( ( 100vw - 2em ) / 11 );
+/* has 16 characters */
+/* THE BIG NAME */
+h1{
+	font-family: cella;
+	/*font-size: calc( ( 100vw - 2em ) / 22 );*/
+	font-size: calc( ( 40em / 16 ) / 0.70 );
+}
+#my-face{
+	width: 21em;
+	max-width: 100%;
+	
+}
+@media (max-width: 43em) {
+	h1{
+		font-size: calc( ( 100vw - 3em ) / ( 16 * 0.7 ) )
+	}
 }
 #about .text-bunch > p {
 	text-align: justify;
@@ -119,7 +143,7 @@ body {
 /* THESE ARE THE PORTFOLIO ITEMS */
 #portfolio {
 	background-color: white;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(128, 192, 255, 0.5);
 }
 
 #portfolio h2 {
@@ -187,7 +211,7 @@ body {
 
 /* on small screens, for portfolio samples, take away static ____ height and give a static 100% width */
 /* 34em is approx calc( 20em * ( 736 / 465 ) + 2em ) where (465/736) is the widest aspect ratio*/
-/* anything smaller would cause a bit of overflow right before the reactive view clicks in */
+/* anything smaller would cause a bit of overflow right before the reactiveness */
 @media (max-width: 34em) {
 	.project-linkbox {
 		width: 100%;
@@ -210,6 +234,10 @@ body {
 #contact {
 	padding-top: 3em;
 	padding-bottom: 3em;
+}
+#contact h2{
+	color: black;
+	margin-top: 0;
 }
 
 .link-box {
@@ -251,6 +279,11 @@ body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
+}
+
+#footer {
+	text-align: right;
+	color: white;
 }
 
 
