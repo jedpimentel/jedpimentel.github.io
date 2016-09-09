@@ -168,6 +168,8 @@ body {
 	height: 20em; 
 	padding: 0;
 	margin: 0;
+	
+	
 }
 /* portfolio item  D E S C R I P T I O N  */
 .project-description{
@@ -184,8 +186,9 @@ body {
 }
 
 /* on small screens, for portfolio samples, take away static ____ height and give a static 100% width */
-/* width is approx calc( 20em * ( 525 / 720 ) + 2px ) */
-@media (max-width: 30em) {
+/* 34em is approx calc( 20em * ( 736 / 465 ) + 2em ) where (465/736) is the widest aspect ratio*/
+/* anything smaller would cause a bit of overflow right before the reactive view clicks in */
+@media (max-width: 34em) {
 	.project-linkbox {
 		width: 100%;
 		margin-left: 0;
@@ -199,6 +202,7 @@ body {
 	.project-image {
 		height: auto;
 		width: 100%;
+		
 	}
 }
 
