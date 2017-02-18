@@ -20,7 +20,7 @@ body {
 .portfolio-segement {
 	margin: 3em 0;
 	_min-height: 50vh;
-	border: 1px solid #DDD;
+	_border: 1px solid #DDD;
 	_background-color: rgba(1, 255, 255, 0.95);
 	background-color: white;
 
@@ -101,6 +101,7 @@ body {
 	_background-color: rgb(255, 230, 204);
 	background-color: white;
 	display: inline-block;
+	margin-bottom: 0;
 }
 #about .text-bunch {
 	display: inline-block;
@@ -155,7 +156,7 @@ h1{
 	display: inline-table;
 	width: 1%;
 
-	border: 1px solid black;
+	_border: 1px solid black;
 	overflow: hidden;
 
 	color:inherit;
@@ -194,6 +195,7 @@ h1{
 	height: 20em;
 	padding: 0;
 	margin: 0;
+
 
 
 }
